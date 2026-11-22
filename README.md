@@ -1,5 +1,6 @@
 # tiny-stack-vm-01
 
-A compact interpreter for make.fun's tiny stack ISA (32-bit wrapping
-arithmetic, 256-value stack, calls, memory, ten traps). `main.ts` runs every
-instance under /input and writes stdout.bin + exit.txt under /output.
+A Node 22 interpreter for make.fun's tiny stack ISA. It runs each instance's
+`program.bin` with its `input.bin` and writes the reference VM's output bytes to
+`stdout.bin` and the exit code to `exit.txt`, including all ten trap codes, the
+step and output limits, wrapping 32-bit arithmetic, and the sign/unsigned rules.
