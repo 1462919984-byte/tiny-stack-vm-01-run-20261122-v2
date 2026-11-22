@@ -2,6 +2,7 @@
 // instance and writes exactly the reference VM's output bytes and exit code.
 // Trap codes (ISA.md "Traps"): 2 underflow, 3 overflow, 4 div-zero, 5 bad opcode,
 // 6 memory, 7 call-depth, 8 RET-empty, 9 pc/immediate, 10 step limit, 11 output limit.
+// Second revision: a behaviour-preserving comment, nothing else changed.
 import { mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 
